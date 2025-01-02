@@ -298,7 +298,7 @@ void searchUserByName(struct User users[],int length){
 				continue;
 			} 
 			for(j=0;j<strlen(temp);j++){
-				temp[j]=tolower(temp[i]);
+				temp[j]=tolower(temp[j]);
 			}
 			if(subCheck!=0){
 				break;
@@ -308,7 +308,7 @@ void searchUserByName(struct User users[],int length){
 	for(i=0;i<length;i++){
 		strcpy(temp2, (users[i].name));
 		for(j=0;j<strlen(temp2);j++){
-			temp2[j]=tolower(temp2[i]);
+			temp2[j]=tolower(temp2[j]);
 		}
 		if (strstr(temp2, temp) != NULL){
 			if(categoryCheck==0){
